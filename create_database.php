@@ -1,5 +1,5 @@
 <?php
-
+//conexão com o o banco
 $servername = "servername";
 
 $username = "username";
