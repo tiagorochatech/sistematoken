@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de filas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f7ff;
+            margin: 0;
+            padding: 0;
+            animation: fadeIn 0.5s ease;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .container {
+            max-width: 600px;
+            width: 90%;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: slideUp 0.5s ease;
+        }
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        .logo {
+            max-width: 260px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #3366cc;
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .shortcut {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .shortcut img {
+            max-width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .shortcut-text {
+            flex: 1;
+        }
+        .button {
+            background-color: #3366cc;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo_azul.png" alt="Logo Azul" class="logo">
+        <h1>Bem-vindo ao Sistema de Filas</h1>
+        <div class="shortcut">
+            <img src="visualizar_icon.png" alt="Visualizar Chamados">
+            <div class="shortcut-text">
+                <h2>Visualizar Chamados</h2>
+                <p>Veja a lista em sua TV.</p>
+            </div>
+            <a class="button" href="visualizar_chamados.php" target="_blank">Acessar</a>
+        </div>
+        <div class="shortcut">
+            <img src="criar_icon.png" alt="Criar Chamados">
+            <div class="shortcut-text">
+                <h2>Gerar fila</h2>
+                <p>Gerar fila com nome e tipo.</p>
+            </div>
+            <a class="button" href="criar_chamado.php" target="_blank">Acessar</a>
+        </div>
+        <div class="shortcut">
+            <img src="atender_icon.png" alt="Atender Chamados">
+            <div class="shortcut-text">
+                <h2>Atender fila</h2>
+                <p>Atenda e finalize .</p>
+            </div>
+            <a class="button" href="atender_chamado.php" target="_blank">Acessar</a>
+        </div>
+    </div>
+</body>
+</html>
