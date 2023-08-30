@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli('sql201.infinityfree.com', 'if0_34821246', 'YMpCsNw3yL9Z8bP', 'if0_34821246_sistema');
+$conn = new mysqli('localhost', 'data_base_name', 'senha', 'banco_criado');
 $query = "SELECT * FROM chamados WHERE status='Novo' OR status='Em Andamento'";
 $result = $conn->query($query);
 
